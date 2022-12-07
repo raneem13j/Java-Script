@@ -1,4 +1,3 @@
-var raneem
 
-
-alert('raneem')
+var user = "Raneem";
+alert(user)
