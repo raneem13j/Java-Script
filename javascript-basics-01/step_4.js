@@ -1,8 +1,8 @@
-var user = prompt("Enter your name", "name...");
+document.getElementById("validate").onclick = function(){
+   var user = document.getElementById("name").value;
 
-var surname = prompt("Enter your surname", "surname...");
-
-var city = prompt("Enter your city", "city...");
-
-alert("Hello " + user + " " + surname + " from " + city);
-
+   var surname = document.getElementById("surname").value;
+    
+   var city = document.getElementById("city").value;
+   alert("Hello " + user + " " + surname + " from" + city)
+}
