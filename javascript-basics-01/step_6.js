@@ -1,4 +1,6 @@
-var firstNumber = prompt("Enter first number");
-var secondNumber = prompt("Enter second number");
-const reminder = (firstNumber%secondNumber);
-alert("Result = " + reminder);
+document.getElementById("validate").onclick = function(){
+ var firstNumber = document.getElementById("first_number").value;
+ var secondNumber = document.getElementById("second_number").value;
+ var remainder = firstNumber%secondNumber;
+ alert(remainder);
+}
