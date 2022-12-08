@@ -1,10 +1,12 @@
-
-let reset = document.querySelector("button").addEventListener("click", function(){
-    var user = document.getElementById("name").value = "";
+function set() {
+    var val = confirm("Do you want to reset?");
  
-    var surname = document.getElementById("surname").value = "";
-     
-    var city = document.getElementById("city").value = "";
-   
-    
-})
+    if (val == true) {
+        document.getElementById("name").value = null;
+        document.getElementById("surname").value = "";
+        document.getElementById("city").value = "";
+    }else {
+     alert("no");
+     return 0;
+    }
+ }
